@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+.gradient-01{
+  position: absolute;
+  width: 200px;
+  height: 238px;
+  top: 0rem;
+  background-color: #8700cc;
+  filter: blur(175px);
+}
+.gradient-02{
+  position: absolute;
+  width: 200px;
+  height: 238px;
+  top: -6rem;
+  right: 0px;
+  background-color: #00c2b3;
+  filter: blur(190px);
+}
+.code-text{
+  font-family: 'Nanum Gothic Coding', monospace;
+}
