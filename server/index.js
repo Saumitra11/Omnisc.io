@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const configuration = new Configuration({
-  organization: "org-yANoEqhc4jJqljwalYBxFTST",
+  organization: "org-BI1XOLfY9lwNOps2myTwraGZ",
   apiKey: process.env.API_KEY,
 });
 const openai = new OpenAIApi(configuration);
@@ -24,13 +24,13 @@ app.post("/", async (req, res) => {
   const { message } = req.body;
   try {
     const response = await openai.createCompletion({
-      model: "gpt-3.5-turbo",
+      model: "text-davinci-003",
       prompt: `${message}`,
-      max_tokens: 100,
+      max_tokens: 200,
       temperature: 0.5,
     });
     res.json({
-      message: response.data.choices[0].value,
+      message: response.data.choices[0].text,
     });
   } catch (err) {
     console.log(err);
