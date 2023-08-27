@@ -17,7 +17,7 @@ Omnisc.io is a web application developed using React.js, Express.js, and Node.js
 
 ## Installation (For Developers)
 
-1. Clone the repository: `git clone https://Saumitra11/Omnisc.io/omnisc-io.git`
+1. Clone the repository: `git clone https://Saumitra11/Omnisc.io.git`
 2. Navigate to the project directory: `cd omnisc-io`
 3. Install dependencies for both the frontend and backend:
    - Frontend: `cd client && npm install`
